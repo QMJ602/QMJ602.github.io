@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-09-08T15:16:42.170Z</updated>
+  <updated>2022-09-10T02:58:15.915Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>字节序</title>
+    <link href="http://example.com/2022/09/10/%E5%AD%97%E8%8A%82%E5%BA%8F/"/>
+    <id>http://example.com/2022/09/10/%E5%AD%97%E8%8A%82%E5%BA%8F/</id>
+    <published>2022-09-10T02:56:55.000Z</published>
+    <updated>2022-09-10T02:58:15.915Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="字节序"><a href="#字节序" class="headerlink" title="字节序"></a>字节序</h2><p>小端格式：将低位字节数据存储在低地址中。</p><p>大端格式：低位字节数据存储在高地址中。</p><p>网络协议指定了通讯字节序：大端。即在接收端收到的第一个字节以高位看待，而在发送端，第一个字节是该数据在内存中起始地址的字节，因此应该以大端存放。</p><p>主机字节序：默认为小端</p><p>字节序转换函数：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;arpa/inet.h&gt;</span></span></span><br><span class="line"><span class="comment">//将32位主机字节序数据转换为网络字节序数据。</span></span><br><span class="line"><span class="type">uint32_t</span> <span class="title function_">htonl</span><span class="params">(<span class="type">uint32_t</span> hostint32)</span>;</span><br><span class="line"><span class="comment">//将16位主机字节序数据转换为网络字节序数据。</span></span><br><span class="line"><span class="type">uint16_t</span> <span class="title function_">htons</span><span class="params">(<span class="type">uint16_t</span> hostint16)</span>;</span><br><span class="line"><span class="comment">//将 32 位网络字节序数据转换成主机字节序数据</span></span><br><span class="line"><span class="type">uint32_t</span> <span class="title function_">ntohl</span><span class="params">(<span class="type">uint32_t</span> netint32)</span>;</span><br><span class="line"><span class="comment">//将16 位网络字节序数据转换成主机字节序数据</span></span><br><span class="line"><span class="type">uint16_t</span> <span class="title function_">ntohs</span><span class="params">(<span class="type">uint16_t</span> netint16)</span>;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;字节序&quot;&gt;&lt;a href=&quot;#字节序&quot; class=&quot;headerlink&quot; title=&quot;字节序&quot;&gt;&lt;/a&gt;字节序&lt;/h2&gt;&lt;p&gt;小端格式：将低位字节数据存储在低地址中。&lt;/p&gt;
+&lt;p&gt;大端格式：低位字节数据存储在高地址中。&lt;/p&gt;
+&lt;p&gt;网络协议指定了通讯字节</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>test</title>
